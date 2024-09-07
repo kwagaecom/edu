@@ -32,52 +32,68 @@ https://templatemo.com/tm-569-edu-meeting
 <body>
 
   <!-- Sub Header -->
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
-          </div>
+<div class="container-fluid">
+    <div class="row align-items-center py-1 px-xl-2">
+        <div class="col-lg-3">
+            <a href="" class="text-decoration-none">
+                <h5><span class="text-primary">HOS</span><span class="text-secondary">TEL</span></h5>
+            </a>
         </div>
-        <div class="col-lg-4 col-sm-4">
-          <div class="right-icons">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
+        <div class="col-lg-3 text-right">
+            <a href="https://www.google.com/maps?q=123+Street,+New+York,+USA" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fas-solid fas-location-dot"></i>
+
+                    <div class="text-left">
+                       <h5> <span class="badge bg-secondary">123 Street, New York, USA</span></h5>
+                    </div>
+                </div>
+            </a>
         </div>
-      </div>
+
+
+        <div class="col-lg-3 text-right">
+            <a href="mailto:example@example.com" style="text-decoration: none; color: inherit;">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h5> <span class="badge bg-danger">help@hometution.com</span></h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-3 text-right">
+            <div class="d-inline-flex align-items-center">
+                <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                <div class="text-left">
+                   <h5> <span class="badge bg-success">+91 34578 67895</span></h5>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+
+
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+ <header class="header-area header-sticky">
       <div class="container">
           <div class="row">
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          Edu Meeting
-                      </a>
+                     <!--  <a href="index.html" class="logo">
+                          Hostel
+                      </a>-->
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                          <li><a href="meetings.html">Meetings</a></li>
+                          <li class="scroll-to-section"><a href="#gallery">Gallery</a></li>
+                          <li class="scroll-to-section"><a href="#about-us">About Us</a></li>
                           <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
-                          <li class="has-sub">
-                              <a href="javascript:void(0)">Pages</a>
-                              <ul class="sub-menu">
-                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
-                                  <li><a href="meeting-details.html">Meeting Details</a></li>
-                              </ul>
-                          </li>
-                          <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
+                         <li class="scroll-to-section"><a href="#review">Review</a></li>
+                          <li class="scroll-to-section"><a href="#courses">We Accomodate</a></li> 
                           <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
                       </ul>        
                       <a class='menu-trigger'>
@@ -94,7 +110,7 @@ https://templatemo.com/tm-569-edu-meeting
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
+          <source src="assets/images/FilterCopy _ .mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -102,11 +118,11 @@ https://templatemo.com/tm-569-edu-meeting
             <div class="row">
               <div class="col-lg-12">
                 <div class="caption">
-              <h6>Hello Students</h6>
-              <h2>Welcome to Education</h2>
-              <p>This is an edu meeting HTML CSS template provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels website, a group of young people by <a rel="nofollow" href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
+              <h6>Welcome to Hostel</h6>
+              <h2 align="left">A HOME away from Home</h2>
+             
               <div class="main-button-red">
-                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                  <div class="scroll-to-section"><a href="#contact">Enquire Now!</a></div>
               </div>
           </div>
               </div>
@@ -115,60 +131,133 @@ https://templatemo.com/tm-569-edu-meeting
       </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
+<style>
+  .services img {
+    width: 100%;
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    border-radius: 20px; /* Optional: Adds rounded corners */
+  }
 
-  <section class="services">
+  .services .item {
+    padding: 15px;
+  }
+</style>
+   <section class="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-service-item owl-carousel">
           
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
-              </div>
+            
+                <img src="https://media.istockphoto.com/id/1406990553/photo/fresh-white-bedclothes-and-towels-on-bed.webp?a=1&b=1&s=612x612&w=0&k=20&c=iYW5ggaTg2U2uoh7UZ8aMZJhTYABhWOWc8hPCkLbWOs=" alt="">
+             
               <div class="down-content">
-                <h4>Best Education</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Clean beds with fresh linens</h4>
+                
               </div>
             </div>
             
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
+             
+                <img src="https://plus.unsplash.com/premium_photo-1664392116172-814eee819397?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fFByaXZhdGUlMjAlMjByb29tc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+             
               <div class="down-content">
-                <h4>Best Teachers</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Private Room</h4>
+                
               </div>
             </div>
             
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
+            
+                <img src="https://media.istockphoto.com/id/2150814142/photo/backpackers-in-the-bunkbed-room-in-the-hostel.webp?a=1&b=1&s=612x612&w=0&k=20&c=KItCPjCTtWebaVzF5ZeochxYSUg8vIHUYAFphtfbTRY=" alt="">
+           
               <div class="down-content">
-                <h4>Best Students</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Shared Rooms</h4>
+                
               </div>
             </div>
             
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
+              
+                <img src="https://images.unsplash.com/photo-1483861911361-57d334ad765b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fExvY2tlcnMlMjBmb3IlMjBwZXJzb25hbCUyMGJlbG9uZ2luZ3N8ZW58MHx8MHx8fDA%3D" alt="">
+              
               <div class="down-content">
-                <h4>Online Meeting</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Lockers for Personal Beloings</h4>
+                
               </div>
             </div>
-            
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
+              
+                <img src="https://media.istockphoto.com/id/1192128830/photo/receptionist-giving-keys-to-hotel-guest.webp?a=1&b=1&s=612x612&w=0&k=20&c=S6T1X2fRhtvrtGRn9K7KOyzHsa7iUcfdsHvbFPnphsQ=" alt="">
+              
               <div class="down-content">
-                <h4>Best Networking</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>24/7 Reception</h4>
+                
+              </div>
+            </div>
+       <div class="item">
+              
+                <img src="https://plus.unsplash.com/premium_photo-1675016457613-2291390d1bf6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VjdXJpdHklMjBzeXN0ZW18ZW58MHx8MHx8fDA%3D" alt="">
+              
+              <div class="down-content">
+                <h4>Security System</h4>
+                
+              </div>
+            </div>  
+<div class="item">
+              
+                <img src="https://media.istockphoto.com/id/842004548/photo/security-guard-standing-arm-crossed.webp?a=1&b=1&s=612x612&w=0&k=20&c=6KsaPCvMNx292-vHHjWtMlWvAjpIXsqSXqrZn7RdHbw=" alt="">
+              
+              <div class="down-content">
+                <h4>Security Guard</h4>
+                
+              </div>
+            </div>  
+<div class="item">
+              
+                <img src="https://media.istockphoto.com/id/1366382199/photo/a-male-hand-filling-drinking-water-from-a-water-purifier-into-a-glass.webp?a=1&b=1&s=612x612&w=0&k=20&c=9Qsz4Gg5zcVTkrmM1QPvqL9WD0P-IF-r8LAoiNEIiCw=" alt="">
+              
+              <div class="down-content">
+                <h4>Water Purifier</h4>
+                
+              </div>
+            </div>  
+<div class="item">
+              
+                <img src="https://media.istockphoto.com/id/1147004201/photo/group-people-eating-food-in-communal-kitchen-at-guesthouse.webp?a=1&b=1&s=612x612&w=0&k=20&c=_Y9vKIPDPBKzxL87khmTdvySDtGXbpQBO7EdFfNL2eE=" alt="">
+              
+              <div class="down-content">
+                <h4>Meal</h4>
+                
+              </div>
+            </div> 
+<div class="item">
+              
+                <img src="https://media.istockphoto.com/id/868638364/photo/worker-with-a-gesture-of-his-hands-to-protect-the-quality-of-the-work.webp?a=1&b=1&s=612x612&w=0&k=20&c=Fg2_RURbr0ZdNXNpCr5H4HlahXGgsSiF9d1CBNXnIQw=" alt="">
+              
+              <div class="down-content">
+                <h4>House Keeping</h4>
+                
+              </div>
+            </div>  
+<div class="item">
+              
+                <img src="https://media.istockphoto.com/id/1248571780/photo/clean-clothes-on-hangers-in-the-laundry-room-protected-with-plastic.webp?a=1&b=1&s=612x612&w=0&k=20&c=81IL_ncZXkkm5JxFaq2umSditHp6_9cLHZhZOUSm0U4=" alt="">
+              
+              <div class="down-content">
+                <h4>Laundary Services</h4>
+                
+              </div>
+            </div>   
+            <div class="item">
+              
+                <img src="https://plus.unsplash.com/premium_photo-1677345218397-2747d7ac05f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RnJlZSUyMFdpJTIwRml8ZW58MHx8MHx8fDA%3D" alt="">
+           
+              <div class="down-content">
+                <h4>Free Wifi</h4>
+               
               </div>
             </div>
             
@@ -178,184 +267,210 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </section>
 
-  <section class="upcoming-meetings" id="meetings">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h2>Upcoming Meetings</h2>
+ <section class="upcoming-meetings" id="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h2>Showcase</h2>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="categories">
+          <h4>Gallery</h4>
+          <ul id="category-list">
+            <li data-category="all"><a href="#">All</a></li>
+            <li data-category="category1"><a href="#">Hostel Campus</a></li>
+            <li data-category="category2"><a href="#">Hostel Room</a></li>
+            <li data-category="category3"><a href="#">Hostel Room Standard</a></li>
+            <li data-category="category4"><a href="#">Hostel Room Sharing Type 1</a></li>
+            <li data-category="category5"><a href="#">Hostel Room Sharing Type 2</a></li>
+            <li data-category="category6"><a href="#">Hostel Room Delux</a></li>
+          </ul>
+          <div class="main-button-red">
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Call us <br>+91 67345 87342 </a>
+
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="categories">
-            <h4>Meeting Catgories</h4>
-            <ul>
-              <li><a href="#">Sed tempus enim leo</a></li>
-              <li><a href="#">Aenean molestie quis</a></li>
-              <li><a href="#">Cras et metus vestibulum</a></li>
-              <li><a href="#">Nam et condimentum</a></li>
-              <li><a href="#">Phasellus nec sapien</a></li>
-            </ul>
-            <div class="main-button-red">
-              <a href="meetings.html">All Upcoming Meetings</a>
+      </div>
+      <div class="col-lg-8">
+        <div class="row" id="meeting-list">
+          <!-- Meeting Item 1 -->
+          <div class="col-lg-6 meeting-item" data-category="category1">
+            <div class="thumb">
+              
+              <a href="#"><img src="https://plus.unsplash.com/premium_photo-1693222202776-16093f192e23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvc3RlbCUyMG91dGVyJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="New Lecturer Meeting"></a>
+            </div>
+            <div class="down-content">
+              <h4 align="center">Hostel Campus</h4>
+              
             </div>
           </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$22.00</span>
-                  </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6>Nov <span>10</span></h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>New Lecturers Meeting</h4></a>
-                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
-                </div>
-              </div>
+          <!-- Meeting Item 2 -->
+          <div class="col-lg-6 meeting-item" data-category="category2">
+            <div class="thumb">
+              
+              <a href="#"><img src="https://media.istockphoto.com/id/1215927063/photo/studying-is-a-cruise-when-you-love-your-majors.webp?a=1&b=1&s=612x612&w=0&k=20&c=f3LsnYr5BKIRL318BWUevKDCdYRr-HAkDTdrogaZya4=" alt="Online Teaching"></a>
             </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$36.00</span>
-                  </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6>Nov <span>24</span></h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>Online Teaching Techniques</h4></a>
-                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
-                </div>
-              </div>
+            <div class="down-content">
+             
+              <h4>Hostel Room Simple</h4>
+            
             </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$14.00</span>
-                  </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6>Nov <span>26</span></h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>Higher Education Conference</h4></a>
-                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
-                </div>
-              </div>
+          </div>
+          <!-- Meeting Item 3 -->
+          <div class="col-lg-6 meeting-item" data-category="category3">
+            <div class="thumb">
+            
+              <a href="meeting-details.html"><img src="https://media.istockphoto.com/id/674909778/photo/happy-backpacker-traveller-stay-in-high-quality-hotel.webp?a=1&b=1&s=612x612&w=0&k=20&c=Pp9pamuPhN3qeOtOyrxEOSWhLXPKHT0bog_hoFfeWSY=" alt="Higher Education"></a>
             </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$48.00</span>
-                  </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6>Nov <span>30</span></h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>Student Training Meetup</h4></a>
-                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
-                </div>
-              </div>
+            <div class="down-content">
+             
+                <h4>Hostel Room Standard</h4>
+             
+             
+              
+            </div>
+          </div>
+<div class="col-lg-6 meeting-item" data-category="category4">
+            <div class="thumb">
+              
+              <a href="#"><img src="https://media.istockphoto.com/id/1045047954/photo/young-backpackers-in-hostel.webp?a=1&b=1&s=612x612&w=0&k=20&c=aCt3q0RQB9TWJpKva-BJ-R2_x69jq4aLnvbumgh-7V8=" alt="Higher Education"></a>
+            </div>
+            <div class="down-content">
+              
+             <h4>Hostel Room Sharing Type1</h4>
+              
+            </div>
+          </div>
+          <!-- Meeting Item 4 -->
+          <div class="col-lg-6 meeting-item" data-category="category5">
+            <div class="thumb">
+              
+              <a href="#"><img src="https://media.istockphoto.com/id/642054744/photo/the-interior-of-a-small-room-with-two-beds.webp?a=1&b=1&s=612x612&w=0&k=20&c=jLoh2-7HZR999jwiMEijL7v5upKkNTwJwFp8nrRKkls=" alt="Student Training"></a>
+            </div>
+            <div class="down-content">
+              
+             <h4>Hostel Room Sharing Type2</h4>
+             
+            </div>
+          </div>
+   <div class="col-lg-6 meeting-item" data-category="category6">
+            <div class="thumb">
+              
+              <a href="#"><img src="https://media.istockphoto.com/id/1136242581/photo/comfortable-budget-hotel-bedroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=coJg648yD7fosJlNM8-KuHvsyxIZ_HmxZsbEPDJ6lNU=" alt="Student Training"></a>
+            </div>
+            <div class="down-content">
+              
+             <h4>Hostel Room Delux</h4>
+             
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const categoryList = document.getElementById('category-list');
+  const meetingList = document.getElementById('meeting-list');
 
-  <section class="apply-now" id="apply">
+  categoryList.addEventListener('click', (event) => {
+    const clickedCategory = event.target.closest('li');
+    if (clickedCategory) {
+      event.preventDefault(); // Prevent default anchor behavior
+      const category = clickedCategory.getAttribute('data-category');
+      
+      // Show all meetings if "All" is selected
+      if (category === 'all') {
+        Array.from(meetingList.children).forEach(item => item.style.display = 'block');
+      } else {
+        Array.from(meetingList.children).forEach(item => {
+          item.style.display = item.getAttribute('data-category') === category ? 'block' : 'none';
+        });
+      }
+    }
+  });
+});
+
+</script>
+   <section class="apply-now" id="apply">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="row">
             <div class="col-lg-12">
               <div class="item">
-                <h3>APPLY FOR BACHELOR DEGREE</h3>
+                <h3>To Stay Monthly</h3>
                 <p>You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.</p>
                 <div class="main-button-red">
-                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                  <div class="scroll-to-section"><a href="#contact">Apply Now!</a></div>
               </div>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="item">
-                <h3>APPLY FOR BACHELOR DEGREE</h3>
-                <p>You are not allowed to redistribute the template ZIP file on any other template website. Please contact us for more information.</p>
+                <h3>To Stay Some Days</h3>
+                <p>We offers comfortable and affordable accommodations . Enjoy a clean, safe, and friendly environment with top-notch amenities and a convenient location</p>
                 <div class="main-button-yellow">
-                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                  <div class="scroll-to-section"><a href="#contact">Book Now!</a></div>
               </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+  <div class="col-lg-6">
           <div class="accordions is-first-expanded">
             <article class="accordion">
                 <div class="accordion-head">
-                    <span>About Edu Meeting HTML Template</span>
+                    <span>What are the check-in and check-out times?</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <p>If you want to get the latest collection of HTML CSS templates for your websites, you may visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Too CSS website</a>. If you need a working contact form script, please visit <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more info.</p>
+                         <p>Check-in time is from 2 PM, and check-out time is until 11 AM. Early check-in and late check-out are subject to availability and may incur additional charges.</p>
                     </div>
                 </div>
             </article>
             <article class="accordion">
                 <div class="accordion-head">
-                    <span>HTML CSS Bootstrap Layout</span>
+                    <span>Do you provide breakfast?</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>
-                        Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.</p>
+                        <p>Yes, we offer a complimentary breakfast from 7 AM to 10 AM each morning. Our breakfast includes a variety of options to suit different dietary preferences.</p>
                     </div>
                 </div>
             </article>
             <article class="accordion">
                 <div class="accordion-head">
-                    <span>Please tell your friends</span>
+                    <span>Is there free Wi-Fi?</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.<br><br>
-                        Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</p>
+                        <p>Yes, we provide free Wi-Fi throughout the hostel. You can stay connected in all areas including your room and common spaces.</p>
                     </div>
                 </div>
             </article>
             <article class="accordion last-accordion">
                 <div class="accordion-head">
-                    <span>Share this to your colleagues</span>
+                    <span>Do you have a cancellation policy?</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br>
-                        Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis, convallis nisi.</p>
+                        <p>Yes, we have a flexible cancellation policy. Cancellations made 24 hours before the check-in date are eligible for a full refund. Please check our terms and conditions for more details.</p>
                     </div>
                 </div>
             </article>
@@ -364,21 +479,94 @@ https://templatemo.com/tm-569-edu-meeting
       </div>
     </div>
   </section>
+<section class="about-us-container" id="about-us">
+    <div class="about-us-content-left">
+        <img src="https://media.istockphoto.com/id/1319014901/photo/receptionist-in-a-hotel-lobby-holding-a-clipboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=Vsy_P-c9oQt1tWh1XBnsGKusBMxsChf2BkjmzgcNLLA=" alt="Receptionist at a hotel lobby">
+    </div>
+    <div class="about-us-content-right">
+        <div class="about-us-title">About Us</div>
+        <div class="about-us-demoFont">
+            <p>Welcome to our hostel, where comfort, affordability, and community come together to create an unforgettable experience. Nestled in the heart of the city, our hostel offers a cozy and welcoming environment for travelers from around the world.</p>  
+            <p>Whether you're here for a short stay or an extended visit, you'll find our modern amenities, clean facilities, and friendly staff ready to make your stay as enjoyable as possible.</p> 
+            <p>We provide a variety of room options to suit your needs, from shared dormitories perfect for meeting fellow travelers to private rooms for those seeking a bit more privacy.</p>
+            <p>With free Wi-Fi, a fully equipped kitchen, and common areas designed for relaxation and socializing, our hostel is more than just a place to sleep—it's a home away from home.</p>
+        </div>
+    </div>
+</section>
+<hr>
+
+<style>
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.about-us-content-left, .about-us-content-right {
+    flex: 1 1 300px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.about-us-content-left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.about-us-content-right {
+    max-width: 600px;
+}
+
+.about-us-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333; /* Dark gray for better readability */
+}
+
+.about-us-demoFont {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666; /* Slightly lighter gray for the text */
+}
+
+@media (max-width: 768px) {
+    .about-us-content-right {
+        max-width: 100%;
+    }
+}
+
+</style>
+
+ <style>
+  .owl-courses-item img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Crop the images to fill the container while maintaining aspect ratio */
+  }
+</style>
 
   <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
-            <h2>Our Popular Courses</h2>
+            <h2>We accomdate</h2>
           </div>
         </div>
         <div class="col-lg-12">
           <div class="owl-courses-item owl-carousel">
             <div class="item">
-              <img src="assets/images/course-01.jpg" alt="Course One">
+              <img src="https://plus.unsplash.com/premium_photo-1661680304651-08aaa535cafb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEJ1ZGdldCUyMFRyYXZlbGVyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Course One">
               <div class="down-content">
-                <h4>Morbi tincidunt elit vitae justo rhoncus</h4>
+                <h4>Budget Travelers</h4>
                 <div class="info">
                   <div class="row">
                     <div class="col-8">
@@ -390,17 +578,15 @@ https://templatemo.com/tm-569-edu-meeting
                         <li><i class="fa fa-star"></i></li>
                       </ul>
                     </div>
-                    <div class="col-4">
-                       <span>$160</span>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/course-02.jpg" alt="Course Two">
+              <img src="https://media.istockphoto.com/id/485376695/photo/team-of-happy-indian-students-smiling-with-books.webp?a=1&b=1&s=612x612&w=0&k=20&c=Li4WqSfRSSAU7-FsYUDUSKs0TbjL_sqOA5DEua6WDG0=" alt="Course Two">
               <div class="down-content">
-                <h4>Curabitur molestie dignissim purus vel</h4>
+                <h4>Young Adults Students</h4>
                 <div class="info">
                   <div class="row">
                     <div class="col-8">
@@ -410,17 +596,15 @@ https://templatemo.com/tm-569-edu-meeting
                         <li><i class="fa fa-star"></i></li>
                       </ul>
                     </div>
-                    <div class="col-4">
-                       <span>$180</span>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/course-03.jpg" alt="">
+              <img src="https://media.istockphoto.com/id/1562983249/photo/portrait-of-happy-and-successful-businessman-indian-man-smiling-and-looking-at-camera.webp?a=1&b=1&s=612x612&w=0&k=20&c=W2ASFBDzepl1JgwpauulMQ39DCRuLS8Gj78eQER5zy4=" alt="">
               <div class="down-content">
-                <h4>Nulla at ipsum a mauris egestas tempor</h4>
+                <h4>Working Professionals</h4>
                 <div class="info">
                   <div class="row">
                     <div class="col-8">
@@ -431,17 +615,15 @@ https://templatemo.com/tm-569-edu-meeting
                         <li><i class="fa fa-star"></i></li>
                       </ul>
                     </div>
-                    <div class="col-4">
-                       <span>$140</span>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/course-04.jpg" alt="">
+              <img src="https://media.istockphoto.com/id/1253272878/photo/senior-man-looking-out-of-window-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=ugL-b4iuFL8bf-zMpY_JZ_nFEVm6W8DFq1hBazkZzMw=" alt="">
               <div class="down-content">
-                <h4>Aenean molestie quis libero gravida</h4>
+                <h4>Retired Persons</h4>
                 <div class="info">
                   <div class="row">
                     <div class="col-8">
@@ -453,14 +635,12 @@ https://templatemo.com/tm-569-edu-meeting
                         <li><i class="fa fa-star"></i></li>
                       </ul>
                     </div>
-                    <div class="col-4">
-                       <span>$120</span>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
+           <!--- <div class="item">
               <img src="assets/images/course-01.jpg" alt="">
               <div class="down-content">
                 <h4>Lorem ipsum dolor sit amet adipiscing elit</h4>
@@ -613,34 +793,152 @@ https://templatemo.com/tm-569-edu-meeting
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/course-04.jpg" alt="">
-              <div class="down-content">
-                <h4>Curabitur molestie dignissim purus</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                       <span>$560</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>--->
+
+
           </div>
         </div>
       </div>
     </div>
   </section>
+<section class="reviews"id="review">
+    <div class="reviews-title">
+        <p>Reviews</p>
+    </div>
+    <div class="reviews-container">
+        <div class="reviews-card">
+            <img class="card-img" src="https://temalcode-agency-portfolio.netlify.app/images/review1.png" alt="Reviewer 1">
+            <div class="card-text">
+                <div class="card-title">
+                    <p>“Excellent Team with Creative Mindset”</p>
+                </div>
+                <div class="card-para">
+                    <p align="justify">"Staying at Hostel was a fantastic experience! The friendly and helpful staff made me feel right at home from the moment I arrived."  </p>
+                </div>
+                <div class="card-author">
+                    <p>Traveller</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-card">
+            <img class="card-img" src="https://temalcode-agency-portfolio.netlify.app/images/review2.png" alt="Reviewer 2">
+            <div class="card-text">
+                <div class="card-title">
+                    <p>“Creative Solutions Delivered”</p>
+                </div>
+                <div class="card-para">
+                    <p align="justify">As a frequent traveler, I've stayed in many hostels, but Hostel stands out for its exceptional service and amenities.</p>
+                </div>
+                <div class="card-author">
+                    <p>Retired Person</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-card">
+            <img class="card-img" src="https://temalcode-agency-portfolio.netlify.app/images/review3.png" alt="Reviewer 3">
+            <div class="card-text">
+                <div class="card-title">
+                    <p>“Highly Recommend Their Services”</p>
+                </div>
+                <div class="card-para">
+                   <p align="justify">My stay at Hostel exceeded all my expectations. The atmosphere was incredibly friendly and relaxed.</p>
+                </div>
+                <div class="card-author">
+                    <p>Student</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.reviews {
+    padding: 5rem 1rem;
+    overflow: hidden;
+    background-color: #1c1c1c;
+}
+
+.reviews-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.reviews-title p {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #e0e0e0;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.reviews-card {
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.reviews-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #444;
+}
+
+.card-text {
+    padding: 1.5rem;
+}
+
+.card-title p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    margin-bottom: 0.5rem;
+}
+
+.card-para p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 1rem;
+}
+
+.card-author p {
+    font-size: 0.9rem;
+    color: #a5a5a5;
+    border-top: 1px solid #444;
+    padding-top: 0.5rem;
+}
+</style>
 
   <section class="our-facts">
     <div class="container">
@@ -734,38 +1032,273 @@ https://templatemo.com/tm-569-edu-meeting
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="right-info">
-            <ul>
-              <li>
-                <h6>Phone Number</h6>
-                <span>010-020-0340</span>
-              </li>
-              <li>
-                <h6>Email Address</h6>
-                <span>info@meeting.edu</span>
-              </li>
-              <li>
-                <h6>Street Address</h6>
-                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
-              </li>
-              <li>
-                <h6>Website URL</h6>
-                <span>www.meeting.edu</span>
-              </li>
-            </ul>
-          </div>
+       <div class="col-lg-3">
+  <div class="right-info">
+    <ul>
+      <li>
+        <h6><i class="fa fa-phone"></i> Phone Number</h6>
+        <span>010-020-0340</span>
+      </li>
+      <li>
+        <h6><i class="fa fa-envelope"></i> Email Address</h6>
+        <span>info@meeting.edu</span>
+      </li>
+      <li>
+        <h6><i class="fa fa-map-marker"></i> Street Address</h6>
+        <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+      </li>
+      <li>
+        <h6><i class="fa fa-watch"></i> Working Hours</h6>
+        <ul>
+          <li>Mon - Fri: 10:00 AM - 6:00 PM</li>
+          <li>Public Holidays: Closed</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<section align="center"class="footer-section footer-map">
+               <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2275273165415!2d-122.41897168468165!3d37.77606097975784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808ea9a6a285%3A0xd06cc431d134d1c2!2s1600%20Market%20St%2C%20San%20Francisco%2C%20CA%2094110!5e0!3m2!1sen!2sus!4v1622463567940!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-      </div>
-    </div>
+             <div align="center"class="row">
+                <div class="col-sm-15">
+                    <a href="#top"><button type="button" class="btn btn-primary">Home</button></a>
+                   <a href="#gallery"><button type="button" class="btn btn-secondary">Gallery</button></a>
+                    <a href="#about-us"><button type="button" class="btn btn-success">About Us</button></a>
+                    <a href="#apply"><button type="button" class="btn btn-danger">Apply Now</button></a>
+                   <a href="#courses"><button type="button" class="btn btn-warning">We Accomodate</button></a>
+                   <a href="#review"><button type="button" class="btn btn-light">Review</button></a>
+                   <a href="#contact"><button type="button" class="btn btn-info">Contact Us</button></a>
+                </div>
+                   
     <div class="footer">
-      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
-          <br>
-          Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
-          <br>
-          Distibuted By: <a href="https://themewagon.com" target="_blank" title="Build Better UI, Faster">ThemeWagon</a>
-        </p>
+
+      <div class="contact-info" style="text-align: right; margin-right: 30px;">
+  <div>
+    <b>Contact:</b> +91 12345 67890 <span style="margin-left: 20px;"><b>Email:</b> <a href="mailto:contact@hostel.com">contact@hostel.com</a></span>
+</div>
+</div>
+<style>
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        .copyright span {
+            display: inline-block;
+            margin-left: 50px;
+            color: #333;
+            font-size: 14px;
+        }
+        .copyright strong span {
+            color: #007bff; /* Change this to your preferred color */
+        }
+    </style>
+     <div class="copyright">
+        <span>&copy; Copyright <strong><span id="yearSpan"></span> Home Tuition</strong>. All Rights Reserved</span>
+        <body onload="google_translate()">
+    <div id="translation"></div>
+
+    <!-- Your other page content goes here -->
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=google_translate"></script>
+    <script>
+        function google_translate() {
+            var opt = {
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                pageLanguage: "en",
+            };
+            new google.translate.TranslateElement(opt, "translation");
+        }
+
+        addEventListener("load", function () {
+            if (document.querySelector(".goog-te-menu-frame")) {
+                document.getElementById("translation").addEventListener("click", function () {
+                    if (this.id === "translation") scrollableLanguagesList();
+                });
+                addEventListener("resize", function () {
+                    if ("none" !== document.querySelector(".goog-te-menu-frame").style.display) scrollableLanguagesList();
+                });
+            }
+        });
+
+        function scrollableLanguagesList() {
+            var iframe = document.querySelector(".goog-te-menu-frame"),
+                doc = iframe.contentWindow.document,
+                div = doc.body.children[0],
+                table = div.children[0],
+                width = div.dataset.width || parseInt(div.style.width),
+                rect,
+                diff;
+
+            if (!div.dataset.width) div.dataset.width = width;
+
+            if (innerWidth < width) {
+                rect = table.getBoundingClientRect();
+                width = rect.right - rect.left;
+                diff = width - innerWidth;
+
+                div.style.width = width - diff - 24 + "px";
+                div.style.padding = "4px 0 1em 4px";
+                div.style.overflowX = "scroll";
+            } else {
+                div.style.width = "auto";
+                div.style.padding = "4px";
+                div.style.overflowX = "visible";
+            }
+
+            rect = div.getBoundingClientRect();
+            iframe.style.width = rect.right - rect.left + "px";
+            iframe.style.height = rect.bottom - rect.top + "px";
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            translationTooltipsDisable();
+        });
+
+        function translationTooltipsDisable() {
+            _tipon = function () {
+                /*Don't display the tooltip*/
+            };
+            _tipoff = function () {
+                /*Don't hide the tooltip*/
+            };
+        }
+    </script>
+
+<style>
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the translation widget */
+#translation {
+    margin-bottom: 0px;
+}
+
+/* Styling for the Google Translate widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Custom styling for the translation button */
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* Button color */
+    border: 2px solid #0056b3 !important; /* Border color */
+    border-radius: 4px;
+    color: white !important;
+    font-size: 16px !important;
+    padding:5px 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* Hover color */
+    border-color: #003f7f !important; /* Hover border color */
+}
+
+/* Customize the translation select box */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+
+/* Style the translation options when the user clicks on the widget */
+.goog-te-menu-frame {
+    width: 20% !important;
+    height: auto !important;
+    max-width: 30px;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the scrollable language list */
+.goog-te-menu2 {
+    max-height: 10px !important;
+    overflow-y: auto !important;
+    border: none !important;
+    padding: 1px !important;
+}
+
+/* Individual language options */
+.goog-te-menu2-item {
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+
+.goog-te-menu2-item-selected {
+    background-color: #ddd !important;
+}
+
+/* Responsive iframe styling */
+iframe.goog-te-menu-frame {
+    max-width: 20% !important;
+    height: auto !important;
+}
+</style>
     </div>
+<script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Calculate the next year
+        const nextYear = currentYear + 1;
+        // Set the text in the span
+        document.getElementById('yearSpan').textContent = `${currentYear}-${nextYear}`;
+    </script>
+<div class="credits">
+        <span>Powered By <a href="https://company.kwaga.ltd/"><span class="badge bg-primary">KwagaWebDev</span></a></span>
+    </div>
+<div align="left" class="contact-info">
+  <button type="button" style="margin-left: 10px;" class="btn btn-primary">
+    <h5>
+      <span class="badge bg-primary">K</span>
+      <span class="badge bg-secondary">W</span>
+      <span class="badge bg-danger">D</span>
+      <span class="badge bg-success">4.7</span>
+      <span class="badge bg-danger">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+      </span>
+    </h5>
+  </button>
+</div>
+<hr>
+ <div align="center"class="row">
+                <div class="col-sm-15">
+                    <a href=""><button type="button" class="btn btn-light">Privacy policy</button></a>
+                   <a href=""><button type="button" class="btn btn-dark">Payment policy</button></a>
+                    <a href=""><button type="button" class="btn btn-primary">Site Map</button></a>
+  <a href=""><button type="button" class="btn btn-secondary">Terms and Conditions</button></a>
+                   <a href=""><button type="button" class="btn btn-success">Payment policy</button></a>
+                    <a href=""><button type="button" class="btn btn-danger">Health and Safety Policy</button></a>
+                </div>
   </section>
 
   <!-- Scripts -->
