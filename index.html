@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Our Hostel</title>
+    <title>Our Hostel-Hosel Near Me </title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -296,10 +296,11 @@ socialShareButtons.forEach(function (button) {
 <div align= "justify-content-center"class="btn-group" role="group" aria-label="Basic mixed styles example">
    <li class="nav-item"><a class="nav-link" href="#home"> <button type="button" class="btn-sm btn-danger">Home</button></a></li>
 <li class="nav-item"><a class="nav-link" href="#about-us"><button type="button" class="btn-sm btn-primary">About </button></a></li>
-<li class="nav-item"><a class="nav-link" href="#gallery"> <button type="button" class="btn-sm btn-info">Gallery</button></a></li></div>
+<li class="nav-item"><a class="nav-link" href="#services"> <button type="button" class="btn-sm btn-secondary">Services</button></a></li>
+
                       
-<div align= "justify-content-center"class="btn-group" role="group" aria-label="Basic mixed styles example">
-  
+
+  <li class="nav-item"><a class="nav-link" href="#gallery"> <button type="button" class="btn-sm btn-info">Gallery</button></a></li>
 <li class="nav-item"><a class="nav-link" href="#courses"><button type="button" class="btn-sm btn-success">We Accomodate</button></a></li>
 <li class="nav-item"><a class="nav-link" href="#review"><button type="button" class="btn-sm btn-dark">Reviews</button></a></li>
 <li class="nav-item"><a class="nav-link" href="#contact"><button type="button" class="btn-sm btn-light">Contact</button></a></li>
@@ -311,10 +312,8 @@ socialShareButtons.forEach(function (button) {
     </div>
   </div>
 </nav>
-
-
 <style>
-  .navbar {
+.navbar {
   background-color: #f8f9fa; /* Light background for the navbar */
 }
 
@@ -326,6 +325,16 @@ socialShareButtons.forEach(function (button) {
   border: none; /* Removes default border from toggle button */
 }
 
+<!-- JavaScript for toggling the menu on mobile -->
+</style>
+<script>
+  document.getElementById('navbar-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('navbar-menu');
+    menu.classList.toggle('collapse');
+  });
+</script>
+
+<style>
    .btn {
             padding: 10px 20px;
             background-color: #28a745;
@@ -945,33 +954,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
-
-   <section class="apply-now" id="apply">
+<section class="apply-now" id="apply">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 align-self-center">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="item">
-              <h3>To Stay Monthly</h3>
-              <p>You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.</p>
-              
-                <button type="button" class="btn btn-primary btn-sm"> <i class="fa fa-phone"></i><span class="text">Phone: + 91 23567 78960</span></button>
-              
+      <!-- Hostel Facilities Accordion -->
+      <div class="col-lg-6">
+        <div style="max-width: 600px; margin: 20px auto; border: 2px solid #ff8c00; border-radius: 8px; overflow: hidden;">
+          <!-- Students -->
+          <div style="border-bottom: 1px solid #ff8c00;">
+            <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #ffdab9; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #ff8c00; cursor: pointer;">🎓 Student Hostel Facilities</button>
+            <div data-ui-tablist-tabpanel style="padding: 15px; display: block;">
+              <div style="font-size: 16px; color: #ff8c00;">
+                Our student hostels are designed to provide a comfortable and conducive environment for learning, offering high-speed internet, study spaces, and a vibrant community of peers.
+              </div>
             </div>
           </div>
-          <div class="col-lg-12">
-            <div class="item">
-              <h3>To Stay Some Days</h3>
-              <p>We offer comfortable and affordable accommodations. Enjoy a clean, safe, and friendly environment with top-notch amenities and a convenient location.</p>
-            
-                <button type="button" class="btn btn-secondary btn-sm"> <i class="fa fa-phone"></i><span class="text">Phone: + 91 23567 98760</span></button>
-      
+          
+          <!-- Professionals -->
+          <div style="border-bottom: 1px solid #ff8c00;">
+            <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #ffdab9; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #ff8c00; cursor: pointer;">💼 Hostel for Working Professionals</button>
+            <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+              <div style="font-size: 16px; color: #ff8c00;">
+                Our hostel facilities for working professionals offer modern amenities, including coworking spaces, high-speed Wi-Fi, and flexible living options to support your work-life balance.
+              </div>
+            </div>
+          </div>
+
+          <!-- Retired Persons -->
+          <div style="border-bottom: 1px solid #ff8c00;">
+            <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #ffdab9; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #ff8c00; cursor: pointer;">👴 Hostel for Retired Persons</button>
+            <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+              <div style="font-size: 16px; color: #ff8c00;">
+                Our retirement hostel provides a peaceful environment, equipped with senior-friendly facilities, recreational areas, and healthcare support for a relaxed and enjoyable stay.
+              </div>
+            </div>
+          </div>
+
+          <!-- Young Adults -->
+          <div>
+            <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #ffdab9; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #ff8c00; cursor: pointer;">🎒 Hostel for Young Adults</button>
+            <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+              <div style="font-size: 16px; color: #ff8c00;">
+                Our young adult hostels offer a dynamic living space with communal areas, gym facilities, and an active social calendar, making it a great place to live, work, and connect.
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- FAQ Accordion -->
       <div class="col-lg-6">
         <div class="accordions is-first-expanded">
           <article class="accordion">
@@ -1024,8 +1055,27 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
+<script>
+  const accordionButtons = document.querySelectorAll('[data-ui-tablist-tab]');
+  
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      const isOpen = panel.style.display === 'block';
 
+      document.querySelectorAll('[data-ui-tablist-tabpanel]').forEach(p => p.style.display = 'none');
+      
+      if (!isOpen) {
+        panel.style.display = 'block';
+      }
+    });
+  });
+</script>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
@@ -1042,16 +1092,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Budget Travelers</h4>
                 <div class="info">
                   <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
                     
+                    <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal1"><button type="button" class="btn btn-warning">Enquiry Now</button></a>
                   </div>
                 </div>
               </div>
@@ -1062,14 +1104,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Young Adults Students</h4>
                 <div class="info">
                   <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
                     
+                    <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal2"><button type="button" class="btn btn-success">Enquiry Now</button></a>
                   </div>
                 </div>
               </div>
@@ -1080,15 +1116,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Working Professionals</h4>
                 <div class="info">
                   <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                    
+                  
+                    <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal3"><button type="button" class="btn btn-dark">Enquiry Now</button></a>
                   </div>
                 </div>
               </div>
@@ -1099,16 +1128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Retired Persons</h4>
                 <div class="info">
                   <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                   
+                    
+                   <a href="#" class="enquiry-button" data-bs-toggle="modal" data-bs-target="#inquiryModal4"><button type="button" class="btn btn-danger">Enquiry Now</button></a>
                   </div>
                 </div>
               </div>
@@ -1274,6 +1295,327 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
   </section>
+     <div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel1"> <h6 ><button type="button" class="btn btn-info btn-sm">
+HOSTEL </button><button type="button" class="btn btn-danger btn-sm">Enquiry </button><button type="button" class="btn btn-dark btn-sm"> For  </button><button type="button" class="btn btn-primary btn-sm">Budget Travellers </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/159371791/photo/taj-mahal-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=ajceNH0V0d_W-28AC24UlT5S_GN8wPXKzyom12FDEFA='); background-size: cover; background-position: center;">
+                  <div class="icon">  <i class="fas fa-travel"></i></div>
+            <form id="applyForm">
+          <div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+              <label for="hostelEnquiryName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+             <label for="hostelEnquiryEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="hostelEnquiryEmail" placeholder="Enter your email" required>
+            </div>
+          </div>
+<div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+               <label for="hostelEnquiryName" class="form-label">Address</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your address" required>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Session Focus -->
+           <div class="col">
+              <label for="hostelEnquiryType" class="form-label">Enquiry Type</label>
+            <select class="form-select" id="hostelEnquiryType" required>
+              <option selected disabled>Select Enquiry Type</option>
+              <option value="availability">Room Availability</option>
+              <option value="pricing">Pricing</option>
+              <option value="facilities">Hostel Facilities</option>
+              <option value="location">Location Details</option>
+              <option value="general">General Enquiry</option>
+            </select>
+            </div>
+ </div>
+   <div class="row">
+            <!-- Preferred Date -->
+            <div class="col">
+             <label for="hostelStayDuration" class="form-label">Preferred Stay Duration</label>
+            <input type="text" class="form-control" id="hostelStayDuration" placeholder="e.g. 3 days, 1 week, etc." required>
+            </div>
+          
+
+          
+            <!-- Preferred Time -->
+            <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Adhar Number</label>
+            <input type="number" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your Adhar number" required>
+            </div>
+</div>
+
+            <!-- Referring Doctor -->
+           <div class="mb-3">
+             <label for="hostelEnquiryMessage" class="form-label">Additional Message</label>
+            <textarea class="form-control" id="hostelEnquiryMessage" rows="4" placeholder="Any additional information or queries"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Submit Enquiry</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="modal fade" id="inquiryModal4" tabindex="-1" aria-labelledby="inquiryModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel4"> <h6 ><button type="button" class="btn btn-info btn-sm">
+HOSTEL </button><button type="button" class="btn btn-danger btn-sm">Enquiry </button><button type="button" class="btn btn-dark btn-sm"> For  </button><button type="button" class="btn btn-primary btn-sm">Retired Persons </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1404907279/photo/indian-people-doing-yoga-in-circle.webp?a=1&b=1&s=612x612&w=0&k=20&c=pKpHeBP47yMrAUfCVTocR_2hcZsnXxI3gVSkgXF5tHA='); background-size: cover; background-position: center;">
+                  <div class="icon">  <i class="fas fa-travel"></i></div>
+            <form id="applyForm">
+          <div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+              <label for="hostelEnquiryName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+             <label for="hostelEnquiryEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="hostelEnquiryEmail" placeholder="Enter your email" required>
+            </div>
+          </div>
+<div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+               <label for="hostelEnquiryName" class="form-label">Address</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your address" required>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Session Focus -->
+           <div class="col">
+             <label for="retiredHostelEnquiryType" class="form-label">Enquiry Type</label>
+            <select class="form-select" id="retiredHostelEnquiryType" required>
+              <option selected disabled>Select Enquiry Type</option>
+              <option value="availability">Room Availability</option>
+              <option value="pricing">Pricing Information</option>
+              <option value="facilities">Hostel Facilities</option>
+              <option value="special_care">Special Care Services</option>
+              <option value="general">General Enquiry</option>
+            </select>
+            </div>
+ </div>
+   <div class="row">
+            <!-- Preferred Date -->
+            <div class="col">
+             <label for="hostelStayDuration" class="form-label">Preferred Stay Duration</label>
+            <input type="text" class="form-control" id="hostelStayDuration" placeholder="e.g. 3 days, 1 week, etc." required>
+            </div>
+          
+
+          
+            <!-- Preferred Time -->
+            <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Adhar Number</label>
+            <input type="number" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your Adhar number" required>
+            </div>
+</div>
+
+            <!-- Referring Doctor -->
+           <div class="mb-3">
+             <label for="hostelEnquiryMessage" class="form-label">Additional Message</label>
+            <textarea class="form-control" id="hostelEnquiryMessage" rows="4" placeholder="Any additional information or queries"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Submit Enquiry</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="modal fade" id="inquiryModal2" tabindex="-1" aria-labelledby="inquiryModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel2"> <h6 ><button type="button" class="btn btn-info btn-sm">
+HOSTEL </button><button type="button" class="btn btn-danger btn-sm">Enquiry </button><button type="button" class="btn btn-dark btn-sm"> For  </button><button type="button" class="btn btn-primary btn-sm">Students </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/485376695/photo/team-of-happy-indian-students-smiling-with-books.webp?a=1&b=1&s=612x612&w=0&k=20&c=Li4WqSfRSSAU7-FsYUDUSKs0TbjL_sqOA5DEua6WDG0='); background-size: cover; background-position: center;">
+                  <div class="icon">  <i class="fas fa-travel"></i></div>
+            <form id="applyForm">
+          <div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+              <label for="hostelEnquiryName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+             <label for="hostelEnquiryEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="hostelEnquiryEmail" placeholder="Enter your email" required>
+            </div>
+          </div>
+<div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+               <label for="hostelEnquiryName" class="form-label">Address</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your address" required>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Session Focus -->
+           <div class="col">
+           <label for="studentHostelEnquiryType" class="form-label">Enquiry Type</label>
+            <select class="form-select" id="studentHostelEnquiryType" required>
+              <option selected disabled>Select Enquiry Type</option>
+              <option value="availability">Room Availability</option>
+              <option value="pricing">Pricing Information</option>
+              <option value="facilities">Hostel Facilities</option>
+              <option value="meal_plans">Meal Plans</option>
+              <option value="general">General Enquiry</option>
+            </select>
+            </div>
+ </div>
+   <div class="row">
+            <!-- Preferred Date -->
+            <div class="col">
+             <label for="hostelStayDuration" class="form-label">Preferred Stay Duration</label>
+            <input type="text" class="form-control" id="hostelStayDuration" placeholder="e.g. 3 days, 1 week, etc." required>
+            </div>
+          
+
+          
+            <!-- Preferred Time -->
+            <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Adhar Number</label>
+            <input type="number" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your Adhar number" required>
+            </div>
+</div>
+
+            <!-- Referring Doctor -->
+           <div class="mb-3">
+             <label for="hostelEnquiryMessage" class="form-label">Additional Message</label>
+            <textarea class="form-control" id="hostelEnquiryMessage" rows="4" placeholder="Any additional information or queries"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Submit Enquiry</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="modal fade" id="inquiryModal3" tabindex="-1" aria-labelledby="inquiryModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h7 class="modal-title" id="inquiryModalLabel3"> <h6 ><button type="button" class="btn btn-info btn-sm">
+HOSTEL </button><button type="button" class="btn btn-danger btn-sm">Enquiry </button><button type="button" class="btn btn-dark btn-sm"> For  </button><button type="button" class="btn btn-primary btn-sm">Working Professionals </button></h6></h7>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1489678199/photo/business-people-shaking-hands-outside-office-building.webp?a=1&b=1&s=612x612&w=0&k=20&c=2mFx6z2aczvfAg2ojq6ina9VzGWqZERrj0jlIVFcPWI='); background-size: cover; background-position: center;">
+                  <div class="icon">  <i class="fas fa-travel"></i></div>
+            <form id="applyForm">
+          <div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+              <label for="hostelEnquiryName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+             <label for="hostelEnquiryEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="hostelEnquiryEmail" placeholder="Enter your email" required>
+            </div>
+          </div>
+<div class="row">
+            <!-- Patient Name -->
+             <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Patient Age -->
+             <div class="col">
+               <label for="hostelEnquiryName" class="form-label">Address</label>
+            <input type="text" class="form-control" id="hostelEnquiryName" placeholder="Enter your address" required>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Session Focus -->
+           <div class="col">
+           <label for="professionalHostelEnquiryType" class="form-label">Enquiry Type</label>
+            <select class="form-select" id="professionalHostelEnquiryType" required>
+              <option selected disabled>Select Enquiry Type</option>
+              <option value="room_availability">Room Availability</option>
+              <option value="pricing">Pricing Information</option>
+              <option value="facilities">Hostel Facilities</option>
+              <option value="amenities">Workplace Amenities</option>
+              <option value="general">General Enquiry</option>
+            </select>
+            </div>
+ </div>
+   <div class="row">
+            <!-- Preferred Date -->
+            <div class="col">
+             <label for="hostelStayDuration" class="form-label">Preferred Stay Duration</label>
+            <input type="text" class="form-control" id="hostelStayDuration" placeholder="e.g. 3 days, 1 week, etc." required>
+            </div>
+          
+
+          
+            <!-- Preferred Time -->
+            <div class="col">
+               <label for="hostelEnquiryPhone" class="form-label">Adhar Number</label>
+            <input type="number" class="form-control" id="hostelEnquiryPhone" placeholder="Enter your Adhar number" required>
+            </div>
+</div>
+
+            <!-- Referring Doctor -->
+           <div class="mb-3">
+             <label for="hostelEnquiryMessage" class="form-label">Additional Message</label>
+            <textarea class="form-control" id="hostelEnquiryMessage" rows="4" placeholder="Any additional information or queries"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Submit Enquiry</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
 <section class="reviews"id="review">
     <div class="reviews-title">
         <p>Reviews</p>
